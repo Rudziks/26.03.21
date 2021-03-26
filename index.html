@@ -9,12 +9,12 @@
 </head>
 <body>
     <div class="grid-container wg">
-        <input type="text" value="Imię:" class="wg t-a-c" id="name" onchange="walidacja()">
+        <input type="text" value="Imię:" class="wg t-a-c" id="imie" onchange="walidacja()">
         <input type="text" value="Nazwisko:" class="wg t-a-c" id="sname" onchange="walidacja()">
     </div>
     
     <div class="grid-container2">
-        <input type="email" value="E-mail:" class="wg t-a-c" id="mail" onchange="walidacja()">
+        <input type="email" value="E-mail:" class="wg t-a-c" id="mail" onchange="walidacja(value)">
         <input type="tel" value="Numer telefonu:" class="wg t-a-c" id="tel" onchange="walidacja()">
         <input type="text" value="Wiadomość do sprzedającego:" class="wg t-a-c" id="info" onchange="walidacja()">
     </div>
@@ -22,6 +22,18 @@
     <div class="t-a-c">
         <input type="button" value="Wyślij" class="btn" onclick="wyslij()">
     </div>
+
+
+<select name="" id="" onchange="pizza(value)">
+    <option value="pizza1">pizza1</option>
+    <option value="pizza1">pizza2</option>
+    <option value="pizza1">pizza3</option>
+</select>
+<br>
+<input type="text" id="imie" onchange="pizza(value)">
+<br>
+<button>zamów</button>
+
 
     <script src="main.js"></script>
 </body>
